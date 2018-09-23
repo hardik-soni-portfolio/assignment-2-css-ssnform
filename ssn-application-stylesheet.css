@@ -1,0 +1,32 @@
+﻿body
+{
+   margin:0;
+   padding:0;
+}
+
+#siteHeader h1 {
+    margin-top:0;
+}
+
+#siteSection {
+    max-width:80%;
+    margin:auto;
+}
+
+.sections {
+    margin-top: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.numberSec {
+   background-color:slategray;
+}
+
+.contentSec {
+    border:outset;
+    border-color:black;
+}

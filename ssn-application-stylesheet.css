@@ -1,16 +1,57 @@
-﻿body
-{
-   margin:0;
-   padding:0;
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Karla;
 }
 
-#siteHeader h1 {
-    margin-top:0;
+#siteHeader {
+    background-color: #111111;
+    color: #E1E1E1;
+}
+
+    #siteHeader h1 {
+        margin-top: 0;
+        color: white;
+    }
+
+header > p {
+    font-size: medium;
+    font-weight: bolder;
+}
+header > #usFlag {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    bottom: 5px;
+}
+
+header > #usMap {
+    position: absolute;
+    top:-5px;
+    right: 8px;
+    z-index:initial;
+}
+
+#siteHeader #formApp {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+#siteHeader #ombno {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    bottom: 5px;
+}
+
+#siteHeader #appSSN {
+    padding: 0 0 5px 10px;
 }
 
 #siteSection {
-    max-width:80%;
-    margin:auto;
+    max-width: 80%;
+    margin: auto;
 }
 
 .sections {
@@ -18,15 +59,128 @@
     overflow: hidden;
     display: grid;
     grid-template-columns: 5% auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
 }
 
 .numberSec {
-   background-color:slategray;
+    background-color: #E1E1E1;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px 10px 5px 10px;
+}
+
+    .numberSec p {
+        text-align: center;
+        justify-content: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin: auto auto auto auto;
+    }
+
+.officeSec {
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+    .officeSec input[type=text] {
+        width: 15%;
+        margin: auto 1em 1em 2em;
+    }
+
+    .officeSec p {
+        font-weight: bolder;
+        margin-top: 0px;
+    }
+
+.evidenceSubmitted input[type=text] {
+    width: 95%;
+    margin: 0 1em 1em 2em;
+}
+
+.officeSignature canvas {
+    margin: 0 1em 0 1em;
+}
+
+.officeSignature p {
+    margin-top: 1em;
+}
+
+.officeSignature input {
+    width: 25%;
+    margin: auto 1em auto 1em;
 }
 
 .contentSec {
-    border:outset;
-    border-color:black;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px 10px 5px 10px;
+}
+
+    .contentSec form {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .contentSec p {
+        margin: auto auto 5px auto;
+        font-weight: bolder;
+    }
+
+input {
+    border: none;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+form {
+    overflow: hidden;
+}
+
+    form > p {
+        float: left;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    form [type=text] {
+        width: 18%;
+        margin: auto 2em auto auto;
+    }
+
+    form [type=date] {
+        width: 18%;
+        margin: auto 2em auto auto;
+    }
+
+    form [type=label] {
+        width: 18%;
+        margin: auto 4em auto auto;
+    }
+
+.actBtns {
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+    .actBtns input {
+        height: 50px;
+        width: 49%;
+        margin-left: auto;
+        background-color: #5c5c5c;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+#siteFooter {
+    background-color: lightgray;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
